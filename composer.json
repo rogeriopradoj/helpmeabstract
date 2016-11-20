@@ -25,5 +25,11 @@
   "autoload": {
     "psr-4": { "Kayladnls\\": "src/" }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "scripts": {
+    "run": [
+      "@composer install",
+      "php -S localhost:8000 -t public public/index.php"
+    ]
+  }
 }
